@@ -1,0 +1,12 @@
+    <section class="profile-banner-username">
+        <p>{{username}}'s Characters</p>
+    </section>
+    
+    <section class="character-list">
+        {{#each characters as |character|}}
+            <div class="character-card">
+                {{> character-details}}
+            </div>
+        {{/each}}
+    </section>
+
